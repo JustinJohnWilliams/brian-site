@@ -1,0 +1,186 @@
+<html>
+	<head>
+		<link href="styles/bootstrap.css" rel="stylesheet" type="text/css" />
+		<link href="styles/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<script src="scripts/jquery-1.8.0.js" type="text/javascript"></script>
+        <script src="scripts/bootstrap.js" type="text/javascript"></script>
+        <title>
+        	Brian W. DeVries
+    	</title>
+	</head>
+	<body>
+		<div class="navbar navbar-static-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="../">
+						University of Texas at Dallas - <em>Brian Devries</em>
+					</a>
+			    </div>
+			</div>
+		</div>
+		<br />
+		<div class="container" id="body">
+			<p class="text-success">
+				<small><b>NOTE:</b> This website should be viewed in Firefox.
+				Viewing with Internet Explorer is known to cause issues with
+				viewing the page or downloading linked files.</small>
+			</p>
+			<h1>CS / CE 4337 - Organization of Programming Languages
+				<a href="cs4337/CS 4337 Fall 2012 Syllabus.doc">[syllabus]</a>
+			</h1>
+
+			<div class="row">
+				<div class="span9">
+					<legend>Contact Information</legend>
+					Email: <a href="mailto:brian.devries@utdallas.edu">brian.devries@utdallas.edu</a>
+					<br />
+					Phone: (555) 214 - 5678
+					<br />
+					Office Hours: <strong>Tuesdays</strong> 5:30 - 6:45 and <strong>Thursdays</strong> 5:30 - 7:30
+					<br />
+					Room: ECSS 3.201
+				</div>
+				<div class="span3">
+					<img src="images/brian.jpg" class="img-rounded" />
+				</div>
+			</div>
+			<hr />
+
+			<ul class="nav nav-tabs" id="myTab">
+				<li class="active"><a href="#announcements" data-toggle="tab">Announcements</a></li>
+				<li><a href="#readings" data-toggle="tab">Readings</a></li>
+				<li><a href="#links" data-toggle="tab">Links</a></li>
+				<li><a href="#changelog" data-toggle="tab">Change Log</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="announcements">
+					<h2>Announcements</h2>
+					<ul>
+						<li>
+							<b>22 Sept 2012:</b>
+							<p>A link to an m4 tutorial has been 
+								<a href="http://mbreen.com/m4.html">posted</a> in the Readings
+								section. We will be going through parts of it during class on
+								Monday.</p>
+						</li>
+						<li><b>10 Sept 2012:</b> The link to Tribble's assessment of and response
+						to Dijkstra's <i>Considered Harmful</i> is 
+						<a href="http://david.tribble.com/text/goto.html">posted</a> below (part
+						II can be skipped). As noted in class, students should read this paper,
+						especially with the objective of obtaining their own understanding of
+						Dijkstra's paper.  Students should write brief (approximately 1
+						paragraph apiece) answers to the following questions
+						(<b>Due Monday, 17 Sept 2012, 3pt quiz grade</b>):
+
+						<ol>
+							<li><b>Is Tribble's argument consistent with Dijkstra's?</b></li>
+							<ul>
+								<li>In particular, does it follow / fit the framework that Dijkstra
+								presents?</li>
+							</ul>
+
+							<li><b>Is Tribble's argument convincing?</b></li>
+							<ul>
+								<li>Do you believe that his argument should be given merit by
+								someone who believes that all <tt>goto</tt>s are bad?</li>
+
+								<li>Can you provide counter-arguments?</li>
+								
+								<li>In other words, it is not enough to simply agree with him - you
+								must objectively assess the argument he is making.</li>
+							</ul>
+						</ol>
+						<li><b>5 Sept 2012:</b> The link to Dijkstra's </li>
+						<i>A Case against the GO TO Statement</i> is 
+						<a href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD02xx/EWD215.html">posted</a>,
+						along with some other interesting links (see the <b>Papers</b> and
+						<b>Links</b> sections below).
+						<ul>
+							<li>I plan to post some papers related to ALGOL tomorrow or Friday, so
+							check back here regularly for updates.</li>
+						</ul>
+					</ul>
+				</div>
+				<div class="tab-pane" id="readings">
+					<h2>Readings</h2>
+					<p>Students are expected to read and understand the articles
+					listed below, or to come to class with questions that would
+					aid their understanding. These papers may not be explicitly
+					re-stated during class; instead, their purpose is to provide
+					points of connections between the different threads of the
+					class (and the authors have generally said it better anyways).</p>
+					<ul>
+						<li>
+						<a href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD02xx/EWD215.html">
+							Dijkstra's <i>A Case against the GO TO Statement</i></a> (aka <i>GO TO
+							Considered Harmful</i>)
+						<li>
+						<a href="http://david.tribble.com/text/goto.html">Go To Considered
+										Harmful: A Retrospective</a> by David R. Tribble. Elaborates on
+						Dijkstra's paper above, then further argues that not all <tt>goto</tt>s
+						are harmful. 
+						<ul>
+							<li>Part II (describing how control statements are translated to
+							assembly) can be skipped.
+						</ul>
+
+						<li>
+							<a href="http://mbreen.com/m4.html">Notes on the M4 Macro
+									Language</a>: a tutorial on m4 by Michael Breen
+						</li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="links">
+					<h2>Links</h2>
+					<ul>
+						<li>
+							<a href="http://youtu.be/E3keLeMwfHY">The Turing Machine model</a> shown in class.
+						</li>
+						<li>
+							<a href="http://www.levenez.com/lang/">A programming language geneology poster</a>. Does not contain every important
+							language, and only covers up to last year, but shows some of the
+							influences of different languages.
+						</li>
+					</ul>
+				</div>
+				<div class="tab-pane" id="changelog">
+					<h2>Change Log</h2>
+					<ul>
+						<li>
+							1.0 (26-Aug-2012)
+							<ul>
+								<li>
+									Initial Posting
+								</li>
+							</ul>
+						</li>
+						<li>
+							1.1 (29-Aug-2012)
+							<ul>
+								<li>
+									UI Update
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myTab a').click(function(e) {
+			e.preventDefault();
+			$(this).tab('show');
+		});
+
+		$('a').click(function() {
+			(this).setAttribute('target', '_blank');
+		})
+	});
+</script>
